@@ -1,19 +1,50 @@
 <DOCTYPE html>
+
   <head>
-    <title>This is chati</title>    
-    <link rel="stylesheet" href="styles.css">
+    <title>This is chati</title>
+    <link rel="stylesheet" href="styles.css">    
+    <script>
+     function myFunction(id_) {   
+       if(id_ =="home"){
+         document.getElementById("home").className = "aSelected";
+         document.getElementById("about").className = "aNotSelected";
+         document.getElementById("blog").className = "aNotSelected";
+       }
+       else if(id_ == "about"){
+         document.getElementById("about").className = "aSelected";
+         document.getElementById("home").className = "aNotSelected";
+         document.getElementById("blog").className = "aNotSelected";
+       }       
+       else if(id_ =="blog"){
+         document.getElementById("blog").className = "aSelected";
+         document.getElementById("about").className = "aNotSelected";
+         document.getElementById("home").className = "aNotSelected";
+       }
+     }
+    </script>
   </head>
+
   <body>
     <div id="rightBody">
       <h1>
-        HE
-       &nbsp; LLO
+        HE &nbsp; LLO
       </h1>
     </div>
     <div id="menu">
-      <h3>
+      <a id ="home" onclick="myFunction(this.id)"class="aSelected" href="#">
         Home
-      </h3>
+      </a>
+      <br>
+      <br>
+      <a id="about" onclick="myFunction(this.id)" href="#">
+        About
+      </a>
+      <br>
+      <br>
+      <a id = "blog" onclick="myFunction(this.id)" href="#">
+        Blog
+      </a>
     </div>
   </body>
-</html>
+
+  </html>
