@@ -1,66 +1,20 @@
-<DOCTYPE html>
-
-  <head>
-    <title>This is chati</title>
-    <link rel="stylesheet" href="styles.css">    
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-  $(document.getElementById("about")).mouseover(function(){
-    $(document.getElementById("test")).animate({left: '600px'});
-  });
-  $(document.getElementById("about")).mouseout(function(){
-    $(document.getElementById("test")).animate({left: '1200px'});
-  }); 
-});
-</script> 
-    <script>   
-     function myFunction(id_) {   
-       if(id_ =="home"){
-         document.getElementById("home").className = "aSelected";
-         document.getElementById("about").className = "aNotSelected";
-         document.getElementById("blog").className = "aNotSelected";
-       }
-       else if(id_ == "about"){
-         document.getElementById("about").className = "aSelected";
-         document.getElementById("home").className = "aNotSelected";
-         document.getElementById("blog").className = "aNotSelected";
-       
-       }       
-       else if(id_ =="blog"){
-         document.getElementById("blog").className = "aSelected";
-         document.getElementById("about").className = "aNotSelected";
-         document.getElementById("home").className = "aNotSelected";
-       }
-     }
-    </script>
-  </head>
-
-  <body>
-    
-    <div id="test">
-       
-    </div>
-    <div id="rightBody">
-      <h1>
-        HE &nbsp; LLO
-      </h1>
-    </div>  
-    <div id="menu">
-      <a id ="home" onclick="myFunction(this.id)"class="aSelected" href="#">
-        Home
-      </a>
-      <br>
-      <br>
-      <a id="about" onclick="myFunction(this.id)" href="#about_page">
-        About
-      </a>
-      <br>
-      <br>
-      <a id = "blog" onclick="myFunction(this.id)" href="#">
-        Blog
-      </a>
-    </div>
-  </body>
-
-  </html>
+<html>
+    <head>
+        <title>This is chati</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="firstOne">
+            
+        </div>
+        <div id="secondOne">
+            
+        </div>
+        <div id="thirdOne">
+            
+        </div>
+        <div id="fourthOne">
+            
+        </div>
+    </body>
+</html>

@@ -1,63 +1,18 @@
-html {
-  margin: 0;
-  height: 100%;
-  overflow: hidden
+html, body {
+    height: 100%; padding: 0; margin: 0; 
 }
-
-body {
-  background: url("https://i.imgur.com/CZSFwY4.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
+div { 
+    width: 50%; height: 50%; float: left; 
 }
-
-#rightBody {
-  float: right;
-  text-align: center;
-  height: 100%;
-  width: 500px;
+#firstOne { 
+    background: #2ebdcd; 
 }
-
-#rightBody h1 {
-  margin-top: 40px;
-  font-size: 200px;
-  color: white;
-  cursor: context-menu;
+#secondOne { 
+    background: white; 
 }
-
-#menu {
-  height: 100%;
-  width: 60px;
-  float: left;
-  margin-left: 0px;
+#thirdOne { 
+    background: #c9d7d8; 
 }
-
-#menu a {
-  position: relative;
-  top: 35%;
-  color: gray;
-  font-size: 15px;
-  text-decoration: none;
-  -webkit-transition: color 0.3s, font-size 0.3s;
-  -moz-transition: color 0.3s, font-size 0.3s;
-  -o-transition: color 0.3s, font-size 0.3s;
-  transition: color 0.3s, font-size 0.3s;
-}
-
-#menu a:hover {
-  font-size: 16px;
-  color: white;
-}
-
-.aSelected::after {
-  content: "<";
-}
-
-#test {
-  background: linear-gradient(to right, ##232526, ##414345);
-  height: 100%;
-  width: 500px;
-  left: 1100px;
-  top: 0px;
-  position: absolute;
+#fourthOne { 
+    background: #444; 
 }
