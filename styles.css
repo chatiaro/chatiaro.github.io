@@ -19,16 +19,20 @@ p{
 }
 
 #firstOne { 
-    background: #2ebdcd;     
+    background: #2ebdcd;  
+    cursor: hand;
 }
 #secondOne { 
     background: white; 
+    cursor: hand;
 }
 #thirdOne { 
     background: #c9d7d8; 
+    cursor: hand;
 }
 #fourthOne { 
     background: #444; 
+    cursor: hand;
 }
 .overlay {
   position: absolute;
