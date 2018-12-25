@@ -4,8 +4,22 @@ html, body {
 div { 
     width: 50%; height: 50%; float: left; 
 }
+h1{    
+    text-align: center;    
+    font-size: 150px;
+    position: relative;    
+    top: 50%;
+    transform: translateY(-100%);              
+    
+}
+p{
+     position: relative;    
+    top: 50%;
+    transform: translateY(-300%);         
+}
+
 #firstOne { 
-    background: #2ebdcd; 
+    background: #2ebdcd;     
 }
 #secondOne { 
     background: white; 
@@ -15,4 +29,24 @@ div {
 }
 #fourthOne { 
     background: #444; 
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #444;
+  background: url("https://i.imgur.com/GVNJnfC.jpg");
+  background-size: cover;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+#fourthOne:hover .overlay {
+  width: 50%;
+  height: 50%;  
+  left: 50%;
+  
+    
 }
