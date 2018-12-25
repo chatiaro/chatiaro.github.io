@@ -49,6 +49,15 @@ body {
   color: white;
 }
 
-.aSelected::after{
-   content: "<";
+.aSelected::after {
+  content: "<";
+}
+
+#test {
+  background: linear-gradient(to right, ##232526, ##414345);
+  height: 100%;
+  width: 500px;
+  left: 1100px;
+  top: 0px;
+  position: absolute;
 }

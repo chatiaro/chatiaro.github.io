@@ -3,7 +3,18 @@
   <head>
     <title>This is chati</title>
     <link rel="stylesheet" href="styles.css">    
-    <script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $(document.getElementById("about")).mouseover(function(){
+    $(document.getElementById("test")).animate({left: '600px'});
+  });
+  $(document.getElementById("about")).mouseout(function(){
+    $(document.getElementById("test")).animate({left: '1200px'});
+  }); 
+});
+</script> 
+    <script>   
      function myFunction(id_) {   
        if(id_ =="home"){
          document.getElementById("home").className = "aSelected";
@@ -14,6 +25,7 @@
          document.getElementById("about").className = "aSelected";
          document.getElementById("home").className = "aNotSelected";
          document.getElementById("blog").className = "aNotSelected";
+       
        }       
        else if(id_ =="blog"){
          document.getElementById("blog").className = "aSelected";
@@ -25,6 +37,10 @@
   </head>
 
   <body>
+    
+    <div id="test">
+       
+    </div>
     <div id="rightBody">
       <h1>
         HE &nbsp; LLO
