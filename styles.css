@@ -1,5 +1,5 @@
 html, body {
-    height: 100%; padding: 0; margin: 0; 
+    height: 100%; padding: 0; margin: 0; overflow: hidden;
 }
 div { 
     width: 50%; height: 50%; float: left; 
@@ -10,26 +10,113 @@ h1{
     position: relative;    
     top: 50%;
     transform: translateY(-100%);              
-    
+    transition: .5s ease;
 }
+#firstH1{
+    text-align: center;    
+    font-size: 150px;
+    position: relative;    
+    top: -10%;
+    transform: translateY(-100%);              
+    transition: .5s ease;
+}
+
 p{
-     position: relative;    
+    position: relative;    
     top: 50%;
     transform: translateY(-300%);         
 }
+#myH2{
+   position: relative;    
+   top: 50%;
+   left: 200px;
+   transform: translateY(-100%);  
+   opacity: 0;
+   transition: .5s ease;
+   color: white;
+}
+#myH21{
+   position: relative;    
+   top: 52%;
+   left: 800px;
+   transform: translateY(-100%);  
+   opacity: 0;
+   transition: .5s ease;
+   color: white;
+}
+#myH22{
+   position: relative;    
+   top: 54%;
+   left: 200px;
+   transform: translateY(-100%);  
+   opacity: 0;
+   transition: .5s ease;
+   color: white;
+}
 
 #firstOne { 
-    background: #2ebdcd;  
+    background: linear-gradient(124deg, #3494e6, #ec6ead);  
     cursor: hand;
+    transition: .5s ease;
+    z-index: -30;
 }
-#secondOne { 
-    background: white; 
-    cursor: hand;
+#firstOne:hover{        
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
 }
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+#secondOne{
+    background: white;
+    z-index: 200;
+}
+
+
 #thirdOne { 
     background: #c9d7d8; 
     cursor: hand;
 }
+
+
 #fourthOne { 
     background: #444; 
     cursor: hand;
@@ -44,13 +131,11 @@ p{
   background-size: cover;
   overflow: hidden;
   width: 0;
-  height: 100%;
+  height: 50%;
   transition: .5s ease;
 }
 #fourthOne:hover .overlay {
   width: 50%;
   height: 50%;  
   left: 50%;
-  
-    
 }
