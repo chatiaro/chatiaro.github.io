@@ -3,10 +3,22 @@
         <meta charset="utf-8">
         <title>This is chati</title>
         <link rel="stylesheet" href="styles.css">
+        <script>
+        	function myFun(){
+                document.getElementById("firstOne").style.height="100%";
+                document.getElementById("firstOne").style.width="100%"; 
+                setTimeout(myFunction, 500);
+            }
+            function myFunction() {
+              document.getElementById("firstH1").innerHTML="Hello!";
+              document.getElementById("firstH1").style.top = "100px";
+            }
+        </script>
     </head>
     <body>
-        <div id="firstOne">
-           <h1 style="color:white">
+       
+        <div id="firstOne" onclick="myFun()">
+           <h1 id="firstH1" style="color:white">
                a
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout
