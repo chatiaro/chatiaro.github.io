@@ -16,7 +16,7 @@ h1{
     text-align: center;    
     font-size: 150px;
     position: relative;    
-    top: -10%;
+    top: 50%;
     transform: translateY(-100%);              
     transition: .5s ease;
 }
@@ -28,31 +28,43 @@ p{
 }
 #myH2{
    position: relative;    
-   top: 50%;
-   left: 200px;
-   transform: translateY(-100%);  
+   top: 15%;
+   left: 5%;
+   transform: translateY(-820%) translateX(-2%);  
    opacity: 0;
    transition: .5s ease;
    color: white;
+   
 }
 #myH21{
    position: relative;    
-   top: 52%;
-   left: 800px;
-   transform: translateY(-100%);  
+   top: 18%;
+   left: 50%;
+   transform: translateY(-840%) translateX(2%);  
    opacity: 0;
    transition: .5s ease;
    color: white;
+   
 }
 #myH22{
    position: relative;    
-   top: 54%;
-   left: 200px;
-   transform: translateY(-100%);  
+   top: 21%;
+   left: 5%;
+   transform: translateY(-840%) translateX(-2%);  
    opacity: 0;
    transition: .5s ease;
    color: white;
 }
+#goHome{
+   position: relative;    
+   top: 45%;
+   left: 5%;
+   transform: translateY(-840%) translateX(40%);  
+   opacity: 0;
+   transition: .5s ease;
+   color: white;
+}
+
 
 #firstOne { 
     background: linear-gradient(124deg, #3494e6, #ec6ead);  
@@ -104,7 +116,7 @@ p{
 	}
 }
 
-
+/**2ebdcd**/
 #secondOne{
     background: white;
     z-index: 200;
@@ -112,13 +124,14 @@ p{
 
 
 #thirdOne { 
-    background: #c9d7d8; 
+    background: white; 
     cursor: hand;
+    border: 1px #2ebdcd;
 }
 
 
 #fourthOne { 
-    background: #444; 
+    background: #2ebdcd; 
     cursor: hand;
 }
 .overlay {

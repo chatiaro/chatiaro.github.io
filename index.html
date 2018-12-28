@@ -11,8 +11,8 @@
             }
             function myFunction() {
               document.getElementById("firstH1").innerHTML="<i>Hello!</i>";
-              document.getElementById("firstH1").style.top = "-80px";
-              document.getElementById("firstOne").style.backgroundColor="black";
+              document.getElementById("firstH1").style.top = "80px";
+              
               setTimeout(moreFunctions, 500);
             }
             function moreFunctions(){
@@ -22,22 +22,26 @@
                 document.getElementById("myH21").style.left="390px";
                 document.getElementById("myH22").style.opacity="1";
                 document.getElementById("myH22").style.left="300px";
+                document.getElementById("goHome").style.opacity="1";
+                document.getElementById("goHome").style.top="35%";
             }
-           
+            function goBack(){
+                location.reload();
+            }
         </script>
     </head>
     <body class="nojQuery">
         <div id="firstOne" onclick="myFun()">
-            <h2 id="myH2">I am Chati, a 16 year old developer.</h2>
-            <h2 id="myH21">I try to make minimalistic websites and apps</h2>
-            <h2 id="myH22">Check out some of my creations here</h2>
-            
-            
            <h1 id="firstH1" style="color:white">
                a
+               
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout
                </p>
+                <h2 id="myH2">I am Chati, a 16 year old developer.</h2>
+                <h2 id="myH21">I try to make minimalistic websites and apps</h2>
+                <h2 id="myH22">Check out some of my creations here</h2>
+                <h2 id="goHome" onclick="goBack()">Go back</h2>
             </h1>              
         </div>
         <div id="secondOne">
@@ -49,7 +53,7 @@
             </h1>  
         </div>
         <div id="thirdOne">
-            <h1 style="color:#444">
+            <h1 style="color:#2ebdcd">
                m
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y work
@@ -57,7 +61,7 @@
             </h1>
         </div>
         <div id="fourthOne">
-            <h1 style="color:#c9d7d8">
+            <h1 style="color:white">
                s
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ocial media
