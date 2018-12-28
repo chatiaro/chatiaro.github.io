@@ -34,6 +34,7 @@ p{
    opacity: 0;
    transition: .5s ease;
    color: white;
+   z-index: 20;
    
 }
 #myH21{
@@ -44,6 +45,8 @@ p{
    opacity: 0;
    transition: .5s ease;
    color: white;
+   z-index: 20;
+   display: none;
    
 }
 #myH22{
@@ -54,6 +57,7 @@ p{
    opacity: 0;
    transition: .5s ease;
    color: white;
+   display: none;
 }
 #goHome{
    position: relative;    
@@ -63,6 +67,7 @@ p{
    opacity: 0;
    transition: .5s ease;
    color: white;
+   display: none;
 }
 
 
@@ -120,8 +125,11 @@ p{
 #secondOne{
     background: white;
     z-index: 200;
+    cursor: hand;
 }
-
+#secondOne:hover{
+    
+}
 
 #thirdOne { 
     background: white; 
@@ -131,7 +139,7 @@ p{
 
 #fourthOne { 
     background: #2ebdcd; 
-    
+    cursor: hand;
 }
 .overlay {
   position: absolute;
