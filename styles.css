@@ -70,7 +70,6 @@ p{
    display: none;
 }
 
-
 #firstOne { 
     background: linear-gradient(124deg, #3494e6, #ec6ead);  
     cursor: hand;
@@ -126,6 +125,7 @@ p{
     background: white;
     z-index: 200;
     cursor: hand;
+    transition: .10s ease;
 }
 #secondOne:hover{
     
@@ -135,6 +135,10 @@ p{
     background: white; 
     cursor: hand;
     border: 1px #2ebdcd;
+    transition: .10s ease;
+}
+#thirdOne:hover{
+   
 }
 
 #fourthOne { 
