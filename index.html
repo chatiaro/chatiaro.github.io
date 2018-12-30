@@ -4,11 +4,12 @@
         <title>This is chati</title>
         <link rel="stylesheet" href="styles.css">
         <script>
+            //////////////////For About////////////////////////////
             function myFun(){
                 document.getElementById("firstOne").style.height="100%";
                 document.getElementById("firstOne").style.width="100%";               
                 setTimeout(myFunction, 200);
-            }
+            }            
             function myFunction() {
               document.getElementById("firstH1").innerHTML="<i>Hello!</i>";
               document.getElementById("firstH1").style.top = "80px";
@@ -32,13 +33,15 @@
             function goBack(){
                 location.reload();
             }
+            //////////////////////////////////////////////////////////
+            ////////////For blog///////////////////////////////////
+            
         </script>
     </head>
     <body class="nojQuery">
         <div id="firstOne" onclick="myFun()">
            <h1 id="firstH1" style="color:white">
-               a
-               
+               a               
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout
                </p>
@@ -48,7 +51,7 @@
                 <h2 id="goHome" onclick="goBack()">Go back</h2>
             </h1>              
         </div>
-        <div id="secondOne">
+        <div id="secondOne" class="toBeHovered">
             <h1 style="color:#2ebdcd">
                b
                <p style="font-size: 20px;">
@@ -56,7 +59,7 @@
                </p>
             </h1>  
         </div>
-        <div id="thirdOne">
+        <div id="thirdOne" class="toBeHovered">
             <h1 style="color:#2ebdcd">
                m
                <p style="font-size: 20px;">
@@ -64,7 +67,7 @@
                </p>
             </h1>
         </div>
-        <div id="fourthOne">
+        <div id="fourthOne" onclick="foSi">
             <h1 style="color:white">
                s
                <p style="font-size: 20px;">
@@ -76,9 +79,9 @@
                 <img scr="https://i.imgur.com/GVNJnfC.jpg">
                 <img id="overlayStuff" src="images/social.png" height="100px" width="130px" usemap="socialMap">
                 <map name="socialMap">
-                    <area href="https://twitter.com/AppDevChati" alt="Facebook" target="_blank" shape="rect" coords="110,95,69,60"> 
-                    <area href="https://github.com/chatiaro" alt="Facebook" target="_blank" shape="rect" coords="54,97,9,55"> 
-                    <area href="https://instagram.com/chati_aro" alt="Facebook" target="_blank" shape="rect" coords="54,44,9,5"> 
+                    <area href="https://twitter.com/AppDevChati" alt="Twitter" target="_blank" shape="rect" coords="110,95,69,60"> 
+                    <area href="https://github.com/chatiaro" alt="Github" target="_blank" shape="rect" coords="54,97,9,55"> 
+                    <area href="https://instagram.com/chati_aro" alt="Instagram" target="_blank" shape="rect" coords="54,44,9,5"> 
                     <area href="https://www.facebook.com/profile.php?id=100009307617920" alt="Facebook" target="_blank" shape="rect" coords="74,44,99,5"> 
                 </map>
             </div>

@@ -2,16 +2,24 @@ html, body {
     height: 100%; padding: 0; margin: 0; overflow: hidden;
 }
 div { 
-    width: 50%; height: 50%; float: left; 
+    width: 50%; height: 50%; float: left;     
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);      
 }
+
+.toBeHovered:hover{
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.8);  
+}
+
+
 h1{    
     text-align: center;    
     font-size: 150px;
     position: relative;    
     top: 50%;
-    transform: translateY(-100%);              
+    transform: translateY(-100%);                   
     transition: .5s ease;
 }
+
 #firstH1{
     text-align: center;    
     font-size: 150px;
@@ -122,10 +130,12 @@ p{
 
 /**2ebdcd**/
 #secondOne{
-    background: white;
+    background: #ffffff;
     z-index: 200;
     cursor: hand;
     transition: .10s ease;
+    position:relative;
+    z-index: 200;
 }
 #secondOne:hover{
     
@@ -133,8 +143,11 @@ p{
 
 #thirdOne { 
     background: white; 
+    z-index: 200;
     cursor: hand;
     border: 1px #2ebdcd;
+    position:relative;
+    z-index: 100;
     transition: .10s ease;
 }
 #thirdOne:hover{
@@ -143,7 +156,8 @@ p{
 
 #fourthOne { 
     background: #2ebdcd; 
-    cursor: hand;
+    cursor: pointer;    
+
 }
 .overlay {
   position: absolute;
@@ -157,6 +171,7 @@ p{
   width: 0;
   height: 50%;
   transition: .5s ease;
+  cursor: default;
 }
 
 #overlayStuff{
