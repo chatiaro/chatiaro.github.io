@@ -35,7 +35,15 @@
             }
             //////////////////////////////////////////////////////////
             ////////////For blog///////////////////////////////////
-            
+            function foSi(){                
+                document.getElementById("firstOne").style.width="0%";                                
+                document.getElementById("secondOne").style.height="100%";
+                document.getElementById("secondOne").style.width="100%";
+                setInterval(changeB, 200);
+            }
+            function changeB(){                                
+                
+            }
         </script>
     </head>
     <body class="nojQuery">
@@ -51,7 +59,7 @@
                 <h2 id="goHome" onclick="goBack()">Go back</h2>
             </h1>              
         </div>
-        <div id="secondOne" class="toBeHovered">
+        <div id="secondOne" class="toBeHovered" onclick="foSi()">
             <h1 style="color:#2ebdcd">
                b
                <p style="font-size: 20px;">
@@ -67,7 +75,7 @@
                </p>
             </h1>
         </div>
-        <div id="fourthOne" onclick="foSi">
+        <div id="fourthOne">
             <h1 style="color:white">
                s
                <p style="font-size: 20px;">
