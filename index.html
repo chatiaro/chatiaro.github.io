@@ -39,10 +39,13 @@
                 document.getElementById("firstOne").style.width="0%";                                
                 document.getElementById("secondOne").style.height="100%";
                 document.getElementById("secondOne").style.width="100%";
+                document.getElementById("blog").style.display="block";
                 setInterval(changeB, 200);
             }
             function changeB(){                                
-                
+                document.getElementById("secondH1").style.top="100px";
+                document.getElementById("blog").style.top="40%";
+                document.getElementById("secondH1").style.color="black";
             }
         </script>
     </head>
@@ -60,12 +63,13 @@
             </h1>              
         </div>
         <div id="secondOne" class="toBeHovered" onclick="foSi()">
-            <h1 style="color:#2ebdcd">
+                <div id="blog" ></div>
+            <h1 id = "secondH1" style="color:#2ebdcd">
                b
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
                </p>
-            </h1>  
+            </h1> 
         </div>
         <div id="thirdOne" class="toBeHovered">
             <h1 style="color:#2ebdcd">
