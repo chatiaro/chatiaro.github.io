@@ -35,17 +35,25 @@
             }
             //////////////////////////////////////////////////////////
             ////////////For blog///////////////////////////////////
-            function foSi(){                
+            function foSi(){                                
                 document.getElementById("firstOne").style.width="0%";                                
                 document.getElementById("secondOne").style.height="100%";
-                document.getElementById("secondOne").style.width="100%";
-                document.getElementById("blog").style.display="block";
+                document.getElementById("secondOne").style.width="100%"; 
+                document.getElementById("secondOne").style.cursor="default";
                 setInterval(changeB, 200);
             }
             function changeB(){                                
+                document.getElementById("blog").style.display="block";
+                setInterval(changeB2, 200);
+            }
+            function changeB2(){                
+                document.getElementById("secondH1").style.fontSize="100px";
                 document.getElementById("secondH1").style.top="100px";
-                document.getElementById("blog").style.top="40%";
+                document.getElementById("blog").style.top="24%";
                 document.getElementById("secondH1").style.color="black";
+            }
+            function goDown(){
+                
             }
         </script>
     </head>
@@ -63,11 +71,13 @@
             </h1>              
         </div>
         <div id="secondOne" class="toBeHovered" onclick="foSi()">
-                <div id="blog" ></div>
+            <div id="blog" >
+                <p style="position: absolute; top: 100%; left: 48%; color: white; cursor: pointer;" onclick="goDown()">Go down</p>
+            </div>
             <h1 id = "secondH1" style="color:#2ebdcd">
                b
                <p style="font-size: 20px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
                </p>
             </h1> 
         </div>
