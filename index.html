@@ -50,14 +50,16 @@
                 setInterval(changeB, 200);
             }
             function changeB(){                                
-                document.getElementById("blog").style.display="block";
+                document.getElementById("blog").style.display="block";                
                 setInterval(changeB2, 200);
             }
-            function changeB2(){                
-                document.getElementById("secondH1").style.fontSize="100px";
-                document.getElementById("secondH1").style.top="100px";
+            function changeB2(){               
+                document.getElementById("secondH1").style.fontSize="100px"; 
+                document.getElementById("secondH1").style.top="100px";                
                 document.getElementById("blog").style.top="24%";
+                document.getElementById("goBackBlog").style.display = "block";
                 document.getElementById("secondH1").style.color="black";
+                document.getElementById("gottaChange").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log";
                 document.getElementById('tummblr').src = "https://techbloguniverse.tumblr.com";
             }  
             $('.blur').mousemove(function(e){
@@ -85,24 +87,25 @@
                 <h2 id="myH21">I make minimalistic websites and apps</h2>
                 <h2 id="myH22">Check out some of my creations <a href="https://github.com/chatiaro" target = "_blank" style=" color:white;">here</a></h2>
                 <h2 id="goHome" onclick="goBack()">Go back</h2>
-            </h1>              
-        </div>
-        <div id="secondOne" class="toBeHovered" onclick="foSi()" onmouseover="mouseOutAbout()">
+            </h1>   
+        </div> 
+        <div id="secondOne" class="toBeHovered" onclick="foSi()" onmouseover="mouseOutAbout()">            
             <div id="blog" >
                 <iframe id="tumblr" src="https://techbloguniverse.tumblr.com" width="100%" height="100%" frameBorder="0"></iframe>
-            </div>
+            </div>            
             <h1 id = "secondH1" style="color:#2ebdcd">
                b
-               <p style="font-size: 20px;">
+               <p id="gottaChange" style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
                </p>
             </h1> 
+            <a href="https://chatiaro.gq" id = "goBackBlog" style="top: 50px; color: black; cursor: pointer; z-index: 2000; display: none"><b>Go back</b></a>              
         </div>
         <div id="thirdOne" class="toBeHovered">
             <h1 style="color:#2ebdcd">
-               m
+               w
                <p style="font-size: 20px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y work
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ork
                </p>
             </h1>
         </div>
