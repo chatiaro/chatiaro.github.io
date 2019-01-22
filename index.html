@@ -41,7 +41,7 @@
                 document.getElementById("firstH1").innerHTML="a  <p style=\"font-size: 20px;\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout </p>";
             }
             //////////////////////////////////////////////////////////
-            ////////////For blog///////////////////////////////////
+            ////////////For blog///////////////////////////////////            
             function foSi(){                                
                 document.getElementById("firstOne").style.width="0%";                                
                 document.getElementById("secondOne").style.height="100%";
@@ -59,20 +59,10 @@
                 document.getElementById("blog").style.top="24%";
                 document.getElementById("goBackBlog").style.display = "block";
                 document.getElementById("secondH1").style.color="black";
-                document.getElementById("gottaChange").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log";
+                document.getElementById("gottaChange").innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log";                
                 document.getElementById('tummblr').src = "https://techbloguniverse.tumblr.com";
             }  
-            $('.blur').mousemove(function(e){
-  
-  var offs = $(this).offset(),
-      p    = {x:offs.left, y:offs.top},
-      mPos = {x:e.pageX, y:e.pageY},
-      x    = mPos.x - p.x - 50,
-      y    = mPos.y - p.y - 50;
-      
-  $('#blog', this).css({left:x, top:y, backgroundPosition: -x+'px '+-y+'px'});
-    
-});          
+            
         </script>
         
     </head>
@@ -90,11 +80,11 @@
             </h1>   
         </div> 
         <div id="secondOne" class="toBeHovered" onclick="foSi()" onmouseover="mouseOutAbout()">            
-                <a href="https://chatiaro.gq" id = "goBackBlog" style="top: 50px; color: black; cursor: pointer; z-index: 2000; display: none"><b>Go back</b></a>          
+                <a href="#" onclick="goBack()" id = "goBackBlog" style="top: 0px; color: black; cursor: pointer; position: relative; z-index: 200000; display: none"><b>Go back</b></a>          
             <div id="blog" >                
                 <iframe id="tumblr" src="https://techbloguniverse.tumblr.com" width="100%" height="100%" frameBorder="0"></iframe>
             </div>            
-            <h1 id = "secondH1" style="color:#2ebdcd; z-index: 101;">
+            <h1 id = "secondH1" style="color:#2ebdcd;">
                b
                <p id="gottaChange" style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
