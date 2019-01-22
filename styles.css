@@ -10,7 +10,6 @@ div {
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.8);  
 }
 
-
 h1{    
     text-align: center;    
     font-size: 150px;
@@ -26,7 +25,7 @@ h1{
     position: relative;    
     top: 50%;
     transform: translateY(-100%);              
-    transition: .5s ease;
+    transition: .7s ease;
 }
 #secondH1{
     text-align: center;    
@@ -37,7 +36,7 @@ h1{
     transition: .5s ease;
 }
 #blog{
-    background-image: url("images/blogBaackground.jpg");
+    
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;    
@@ -47,10 +46,22 @@ h1{
     height: 80%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    display: none;
+    display: none;    
     transition: .5s ease;    
 }
+#blurContainer{
+ 
+}
+.blur {
 
+  }
+#blog-tContainer{    
+    background: rgba(0, 0, 0, 0.715);
+    z-index: 1000;
+}
+#blog-text{
+
+}
 p{
     position: relative;    
     top: 50%;

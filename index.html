@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <title>This is chati</title>
         <link rel="stylesheet" href="styles.css">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
         <script>
             //////////////////For About////////////////////////////
             function myFun(){
@@ -33,6 +34,12 @@
             function goBack(){
                 location.reload();
             }
+            function mouseOverAbout(){
+                document.getElementById("firstH1").innerHTML="<i>Hello!</i>"
+            }
+            function mouseOutAbout(){
+                document.getElementById("firstH1").innerHTML="a  <p style=\"font-size: 20px;\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout </p>";
+            }
             //////////////////////////////////////////////////////////
             ////////////For blog///////////////////////////////////
             function foSi(){                                
@@ -51,11 +58,21 @@
                 document.getElementById("secondH1").style.top="100px";
                 document.getElementById("blog").style.top="24%";
                 document.getElementById("secondH1").style.color="black";
-            }
-            function goDown(){
-                
-            }
+                document.getElementById('tummblr').src = "https://techbloguniverse.tumblr.com";
+            }  
+            $('.blur').mousemove(function(e){
+  
+  var offs = $(this).offset(),
+      p    = {x:offs.left, y:offs.top},
+      mPos = {x:e.pageX, y:e.pageY},
+      x    = mPos.x - p.x - 50,
+      y    = mPos.y - p.y - 50;
+      
+  $('#blog', this).css({left:x, top:y, backgroundPosition: -x+'px '+-y+'px'});
+    
+});          
         </script>
+        
     </head>
     <body class="nojQuery">
         <div id="firstOne" onclick="myFun()">
@@ -70,14 +87,14 @@
                 <h2 id="goHome" onclick="goBack()">Go back</h2>
             </h1>              
         </div>
-        <div id="secondOne" class="toBeHovered" onclick="foSi()">
+        <div id="secondOne" class="toBeHovered" onclick="foSi()" onmouseover="mouseOutAbout()">
             <div id="blog" >
-                <p style="position: absolute; top: 100%; left: 48%; color: white; cursor: pointer;" onclick="goDown()">Go down</p>
+                <iframe id="tumblr" src="https://techbloguniverse.tumblr.com" width="100%" height="100%" frameBorder="0"></iframe>
             </div>
             <h1 id = "secondH1" style="color:#2ebdcd">
                b
                <p style="font-size: 20px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; log
                </p>
             </h1> 
         </div>
@@ -85,7 +102,7 @@
             <h1 style="color:#2ebdcd">
                m
                <p style="font-size: 20px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y work
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; y work
                </p>
             </h1>
         </div>
@@ -93,7 +110,7 @@
             <h1 style="color:white">
                s
                <p style="font-size: 20px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ocial media
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ocial
                </p>
             </h1>
             
@@ -108,5 +125,6 @@
                 </map>
             </div>
         </div>
+
     </body>
 </html>
