@@ -21,15 +21,14 @@ h1{
 
 #firstH1{
     text-align: center;    
-    font-size: 130px;
+    font-size: 150px;
     position: relative;    
     top: 50%;
     transform: translateY(-90%);              
     transition: .7s ease;
 }
 #secondH1{
-    text-align: center;    
-    font-size: 130px;
+    text-align: center;        
     position: relative;    
     top: 50%;
     transform: translateY(-90%);              
