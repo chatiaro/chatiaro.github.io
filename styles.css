@@ -24,14 +24,14 @@ h1{
     font-size: 150px;
     position: relative;    
     top: 50%;
-    transform: translateY(-90%);              
+    transform: translateY(-100%);              
     transition: .7s ease;
 }
 #secondH1{
     text-align: center;        
     position: relative;    
     top: 50%;
-    transform: translateY(-90%);              
+    transform: translateY(-100%);              
     transition: .5s ease;
     z-index: 101;
 }
@@ -181,7 +181,7 @@ p{
     border: 1px #2ebdcd;
     position:relative;
     z-index: 100;
-    transition: .10s ease;
+    transition: .7s ease;
 }
 #thirdOne:hover{
    
