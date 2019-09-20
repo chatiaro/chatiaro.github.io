@@ -23,8 +23,8 @@ h1{
     text-align: center;    
     font-size: 150px;
     position: relative;    
-    top: 50%;
-    transform: translateY(-100%);              
+    top: 35%;
+    transform: translateY(-80%);              
     transition: .7s ease;
 }
 #secondH1{
@@ -117,7 +117,7 @@ p{
     transition: .5s ease;
     z-index: -30;
 }
-#firstOne:hover{        
+#firstOne:hover{            
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 10s ease ;
@@ -162,8 +162,10 @@ p{
 }
 
 /**2ebdcd**/
-#secondOne{
-    background: #ffffff;    
+#secondOne{    
+    background: #ffffff;  
+    background-image: url("images/keyboard_minimal.jpg");
+    background-size: cover;  
     cursor: hand;
     transition: .5s ease;
     position:relative;
@@ -176,6 +178,8 @@ p{
 
 #thirdOne { 
     background: white; 
+    background-image: url("images/plantMinimal.jfif");
+    background-size: cover;
     z-index: 200;
     cursor: hand;
     border: 1px #2ebdcd;
@@ -189,6 +193,8 @@ p{
 
 #fourthOne { 
     background: #2ebdcd; 
+    background-image: url("images/socialBack.jpg");
+    background-size: cover;
     cursor: pointer;    
     transition: .5s ease;
 }

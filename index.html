@@ -13,7 +13,7 @@
                 setTimeout(myFunction, 200);
             }            
             function myFunction() {
-              document.getElementById("firstH1").innerHTML="<i>Hello!</i>";
+              //document.getElementById("firstH1").innerHTML="<i>Hello!</i>";
               document.getElementById("firstH1").style.top = "80px";
               document.getElementById("myH2").style.display="block";
               document.getElementById("myH21").style.display="block";
@@ -39,7 +39,7 @@
                 document.getElementById("firstH1").innerHTML="<i>Hello!</i>"
             }
             function mouseOutAbout(){
-                document.getElementById("firstH1").innerHTML="a  <p style=\"font-size: 20px;\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout </p>";
+                document.getElementById("firstH1").innerHTML="h  <p style=\"font-size: 20px;\"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ello</p>";
             }
             //////////////////////////////////////////////////////////
             ////////////For blog///////////////////////////////////            
@@ -50,17 +50,19 @@
                 document.getElementById("secondOne").style.cursor="default";
                 setInterval(changeB, 200);
             }
-            function changeB(){                                
+            function changeB(){                                                
                 document.getElementById("blog").style.display="block";                
                 setInterval(changeB2, 200);
             }
-            function changeB2(){               
+            function changeB2(){                                
+                //document.getElementById("secondH1").innerHTML=""; 
                 document.getElementById("secondH1").style.fontSize="100px"; 
                 document.getElementById("secondH1").style.top="50px";                
                 document.getElementById("blog").style.top="15%";                
-                document.getElementById("secondH1").style.color="black";                       
+                document.getElementById("secondH1").style.color="black";                                       
                 setInterval(makeBackAppear, 100);                   
                 document.getElementById('tummblr').src = "https://techbloguniverse.tumblr.com";                
+                
             }  
             function makeBackAppear(){
                 document.getElementById("goBackBlog").style.display = "block";
@@ -94,9 +96,9 @@
     <body class="nojQuery">        
         <div id="firstOne" onclick="myFun()">
            <h1 id="firstH1" style="color:white">
-               a               
+               h               
                <p style="font-size: 20px;">
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bout
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ello
                </p>
                 <h2 id="myH2">I am Chati, a 16 year old developer.</h2>
                 <h2 id="myH21">I make minimalistic websites and apps</h2>
@@ -124,16 +126,16 @@
                </p>
             </h1>  
             <div>
-                <iframe id="workFrame" src = "https://medium.com/@chatti13.chatter" frameBorder = 0; style="width: 0; height: 165% ;position: relative; opacity: 0; top: 50%; transform: translateY(-137%); transition: .5s opacity .7s"></iframe>                
+                <!--<iframe id="workFrame" src = "https://medium.com/@chatti13.chatter" frameBorder = 0; style="width: 0; height: 165% ;position: relative; opacity: 0; top: 50%; transform: translateY(-137%); transition: .5s opacity .7s"></iframe>-->
             </div>          
         </div>
         <div id="fourthOne">
-            <h1 style="color:white">
+            <!--<h1 style="color:white">
                s
                <p style="font-size: 20px;">
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ocial
                </p>
-            </h1>
+            </h1>-->
             
              <div class="overlay">
                 <img scr="https://i.imgur.com/GVNJnfC.jpg">
